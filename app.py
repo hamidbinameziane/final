@@ -13,7 +13,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/upload", methods=["POST"])
+@app.route("/index", methods=["POST"])
 def upload_file():
     if 'file' in request.files:
         file = request.files['file']
