@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://localhost/asyncjs/alert.js"></script>
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/canv.css') }}">
+    <title>Document</title>
+</head>
+
+<h1>HTML5 Canvas Demos</h1>
+<p>Learning about HTML5 canvas and making some simple stuff.</p>
+		<section>
+			<h2>Select Demo</h2>
+		
+				<div id="birds" class="demo">
+					Flying Birds
+				</div>
+				<div id="cats" class="demo">
+					Moving Cats
+				</div>
+				<div id="ellipses" class="demo">
+					Ellipses
+				</div>
+			
+		
+				<div id="balls" class="demo">
+					Balls
+				</div>
+				<div id="color-squares" class="demo">
+					Color Squares
+				</div>
+			
+			
+			<div class="clearfix"></div>
+
+			<h3 id="demo-name"></h3>
+			<p id="demo-event"></p>
+		</section>
+
+		<canvas id="canvas" height="600" width="600"></canvas>
+</body>
+<script src="{{ url_for('static', filename='js/canv.js')}}"></script>
+</html>
