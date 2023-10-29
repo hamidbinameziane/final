@@ -8,13 +8,11 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hamidbinameziane'
 app.config['UPLOAD_FOLDER'] = 'static/images'
 
+
+
+
 @app.route("/", methods=["GET", "POST"])
 def index():
-    return render_template("index.html")
-
-
-@app.route("/upload", methods=["POST"])
-def upload_file():
     if 'file' in request.files:
         file = request.files['file']
         filename = secure_filename(file.filename)
